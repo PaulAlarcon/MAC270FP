@@ -1,0 +1,60 @@
+
+
+<HTML>
+      <HEAD>
+        <TITLE>Paul Alarcon</TITLE>
+
+        <script type="text/javascript">
+          function sum()
+          {	
+			 //document.getElementById("checkbox").value = "newCheckboxValue";
+             var num1 = document.myform.number1.value;
+             var num2 = document.myform.number2.value;
+             var sum = parseInt(num1) + parseInt(num2);
+             document.getElementById('add').value = sum;
+          }
+		  
+		  function checkfor()
+		  {
+		  var checkbox = document.getElementById("checkbox");
+			
+		if(checkbox.checked == true)
+		   {
+
+		  var checked1 = 0;
+		  document.getElementById('number1').value = checked1;
+		  document.getElementById('number2').value = checked1;
+		  document.getElementById('add').value = checked1;
+		//set disable to enable
+		  document.getElementById("number1").disabled = false;
+		  document.getElementById("number2").disabled = false;
+		  document.getElementById("add").disabled = false;
+ 
+
+		
+		  }
+		  else{
+		  document.getElementById("number1").disabled = true;
+		  document.getElementById("number2").disabled = true;
+		  document.getElementById("add").disabled = true;
+		  
+		  document.getElementById('number1').value = "";
+		  document.getElementById('number2').value =  "";
+		  document.getElementById('add').value = "";
+		  	  
+		  };
+		  }
+        </script>
+      </HEAD>
+
+      <BODY>
+        <FORM NAME="myform"> 
+		<input type="checkbox" id="checkbox" onclick="checkfor()">check to set values boxes to 0.<br>
+          <INPUT TYPE="text" ID="number1" NAME="number1" VALUE="" disabled > + 
+          <INPUT TYPE="text" ID="number2" NAME="number2" VALUE="" disabled >
+          <INPUT TYPE="button" NAME="button" Value="=" onClick="sum()">
+          <INPUT TYPE="text" ID="add" NAME="result" VALUE="" disabled>
+        </FORM>
+
+      </BODY>
+</HTML>

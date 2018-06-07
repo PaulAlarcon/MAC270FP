@@ -1,0 +1,104 @@
+body {
+	color: #000;
+	font-size: 12px;
+}
+
+.reset-right {
+	padding-right: 0;
+	margin-right: 0;
+	clear: right;
+}
+
+header {
+	background: #AAA;
+	margin: 0 0 15px;
+}
+
+header h1 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.select-group {
+	overflow: hidden;
+	margin: 0 0 10px;
+}
+
+header label {
+	font-size: 14px;
+	font-weight: 666;
+}
+
+header select {
+	width: 200px;
+	height: 25px;
+}
+
+#body label {
+	margin-right: 10px;
+}
+
+#body input, #body textarea, #body select {
+	width: 100%;
+}
+
+input[type="checkbox"] {
+	width: auto !important;
+	float: right;
+}
+
+/* Style the tab */
+.tab{
+    font-family: arial; 
+    width:  100%;
+    margin: 0 auto;
+    padding: 5px 5px 0 5px;
+    background: #999;
+    text-align: center;
+}
+
+.tablinks{ 
+	display: inline-block;
+    font-size: 14px; 
+    background: #555; 
+    padding: 5px 14px; 
+    cursor: pointer; 
+    transition: 0.2s;
+    color: #FFF !important;
+}
+
+.tablinks:hover {
+	background: #DDD;
+	color: #000!important;
+}
+
+.tablinks.active {
+    background-color: #CCC;
+    color: #000!important;
+}
+
+.tabcontent {
+    display: none;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #CCC;
+    border-top: none;
+    background: #CCC;
+}
+
+.tabPanel {
+    font-size: 20px; 
+    background: #666; 
+    padding: 5px 20px; 
+    color: #fff; 
+    display: none; 
+}
+
+.tabPanel_two{
+    background: #888; 
+    color: #444;
+}
+
+#viewMinutes {
+    float: right;
+}
